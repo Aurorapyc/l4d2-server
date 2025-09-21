@@ -1,0 +1,4 @@
+# L4D2 Server Ignore Rules
+*.log
+logs/
+#*.smx
