@@ -1,0 +1,15 @@
+services:
+  pz-server:
+    image: ubuntu:22.04
+    container_name: l4d2
+    restart: unless-stopped
+    mem_limit: 16g
+    memswap_limit: 16g
+    volumes:
+      - ./server-file:/home/server-file
+      - ./envi.sh:/home/envi.sh
+    ports:
+      - "27015:27015/udp"
+      - "27015:25015/tcp"
+    tty: true
+    stdin_open: true
