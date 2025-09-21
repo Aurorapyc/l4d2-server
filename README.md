@@ -73,7 +73,7 @@ rm -rf steamcmd_linux.tar.gz
 echo "开始安装L4D2"
 "$STEAMCMD" \
     +force_install_dir "$INSTSLL_DIR" \
-    +login foreverwarn Az001368 \
+    +login user password \
     +app_update $APP_ID validate \
     +quit
 ```
